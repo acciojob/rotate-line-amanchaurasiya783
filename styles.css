@@ -1,6 +1,22 @@
 /*  your css code here. If applicable */
+.main{
+	width : 400px;
+	height : 400px;
+	display: flex;
+	align-items : center;
+	justify-content : center;
+}
 #line{
-	height = 2px;
-	width = 200px;
-	background-color = black;
+	height : 2px;
+	width : 200px;
+	background-color : black;
+	animation : rotation 2s linear infinite;
+	animation-play-state : paused;
+}
+
+
+@keyframes rotation {
+	to {
+		transform : rotate(360deg);
+	}
 }
